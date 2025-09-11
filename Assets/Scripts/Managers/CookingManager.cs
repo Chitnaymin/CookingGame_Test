@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CookingManager : MonoBehaviour {
     public static CookingManager Instance { get; private set; }
-    
+
     public bool IsCooking { get; private set; }
 
     public event Action<FoodSO> OnCookingStarted;
@@ -24,12 +24,30 @@ public class CookingManager : MonoBehaviour {
     }
 
     private void Start() {
-        // Resume cooking if the game was closed mid-cook
+        // Start a coroutine to wait until InventoryManager is ready
+        StartCoroutine(WaitForInventoryManager());
+    }
+
+    private IEnumerator WaitForInventoryManager() {
+        // Wait until InventoryManager.Instance is not null
+        while (InventoryManager.Instance == null) {
+            yield return null; // wait one frame
+        }
+
+        // Optional: wait one more frame to ensure Start() of InventoryManager is finished
+        yield return null;
+
+        // Now safe to access player data
         var data = InventoryManager.Instance.playerData;
+        Debug.Log("Reached after InventoryManager initialized...");
+
         if (!string.IsNullOrEmpty(data.cookingRecipeId) && data.cookingRemainingTime > 0) {
+            Debug.Log("Resuming cooking...");
             FoodSO foodToResume = Resources.Load<FoodSO>("ScriptableObjects/Foods/" + data.cookingRecipeId);
             if (foodToResume != null) {
                 ResumeCooking(foodToResume, data.cookingRemainingTime);
+            } else {
+                Debug.LogWarning("FoodSO not found for ID: " + data.cookingRecipeId);
             }
         }
     }
@@ -98,7 +116,7 @@ public class CookingManager : MonoBehaviour {
 
         // --- Cooking is Finished ---
         IsCooking = false;
-        
+
         var data = InventoryManager.Instance.playerData;
         data.cookingRecipeId = null;
         data.cookingRemainingTime = 0;
