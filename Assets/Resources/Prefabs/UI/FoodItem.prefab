@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 63898856845099324}
   - component: {fileID: 7073381965511723548}
   - component: {fileID: 7160310848815139278}
+  - component: {fileID: 7923010963136311109}
   m_Layer: 5
   m_Name: FoodItem
   m_TagString: Untagged
@@ -273,6 +274,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7923010963136311109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3489530105146345843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fb622e0b2c073458808aaa429244a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtName: {fileID: 6620126235698266000}
+  imgFood: {fileID: 7471635228818634234}
+  imgBG: {fileID: 1973609439345021571}
+  btnFood: {fileID: 7160310848815139278}
+  imgSelected_1s: {fileID: 21300000, guid: a82f7cc2604c12144baa807053e940c2, type: 3}
+  imgSelected_2s: {fileID: 21300000, guid: d83091c38b4f57344b0dc2df5197caed, type: 3}
+  imgSelected_3s: {fileID: 21300000, guid: a3c5a03bf1b3ece4f8ebd07511a4e93f, type: 3}
+  imgUnselected_1s: {fileID: 21300000, guid: 01923d9f95f327c45815723b78926e97, type: 3}
+  imgUnselected_2s: {fileID: 21300000, guid: 6ae664743f2f973439e757a99f931458, type: 3}
+  imgUnselected_3s: {fileID: 21300000, guid: f54ed2d9c8ba5a7438b59ae1c91207ea, type: 3}
 --- !u!1 &3722437260606975994
 GameObject:
   m_ObjectHideFlags: 0

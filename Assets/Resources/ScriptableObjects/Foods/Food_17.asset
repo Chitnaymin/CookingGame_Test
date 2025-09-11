@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d794652fc1ca14aabd9c057576e29a, type: 3}
+  m_Name: Food_17
+  m_EditorClassIdentifier: 
+  foodName: Food 17
+  foodSprite: {fileID: 2084847981, guid: 620c2826dc84d184c8478e6ea47c4cc0, type: 3}
+  starCount: 2
+  cookingTime: 102
+  requirements:
+  - ingredient: {fileID: 11400000, guid: c5f3ec7f3715ac94993bfd89c87a7447, type: 2}
+    amount: 2
+  - ingredient: {fileID: 11400000, guid: 03b5a8e1fe6753f478b2f80689391784, type: 2}
+    amount: 4
+  - ingredient: {fileID: 11400000, guid: 9248170c0ed924a4d80f62d07a8e790b, type: 2}
+    amount: 1

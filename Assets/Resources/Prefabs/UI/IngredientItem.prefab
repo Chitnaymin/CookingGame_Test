@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 6138635455784306228}
   - component: {fileID: 8819193090674700558}
   - component: {fileID: 2080288325993417596}
+  - component: {fileID: 9083146931661150067}
   m_Layer: 5
   m_Name: IngredientItem
   m_TagString: Untagged
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4817757400568274528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -199,6 +200,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9083146931661150067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4817757400568274528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d295ef7376b14094e8c399dc1acde1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgIngredient: {fileID: 939973628037261451}
+  txtIngredientCount: {fileID: 2937832418991932767}
 --- !u!1 &6642998718246094071
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0000023842, y: -70.7}
-  m_SizeDelta: {x: 66.4895, y: 50}
+  m_SizeDelta: {x: 139.2057, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &411519141003672973
 CanvasRenderer:

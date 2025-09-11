@@ -1,0 +1,49 @@
+Cooking Animation.png
+size:2022,1211
+filter:Linear,Linear
+scale:0.5
+Aura Top
+bounds:921,889,407,191
+Body
+bounds:2,772,533,207
+Body Burn
+bounds:1330,835,532,206
+Fire
+bounds:1392,1043,493,166
+Layer 130 Copy
+bounds:2,299,673,357
+Layer 130 Copy Burn
+bounds:1348,477,672,356
+Light Rays
+bounds:677,214,617,363
+Particle
+bounds:537,658,383,229
+Pot inside
+bounds:749,1154,405,55
+Pot inside Burn
+bounds:343,1155,404,54
+Smoke L
+bounds:1231,1082,159,127
+Smoke Line
+bounds:922,579,254,424
+rotate:90
+Smoke M
+bounds:307,1177,32,34
+rotate:90
+Smoke R
+bounds:1156,1146,73,63
+Smoke Ray
+bounds:1296,2,615,473
+Soup
+bounds:2,1190,303,19
+Top Burn
+bounds:2,983,457,170
+top
+bounds:461,981,458,171
+
+Cooking Animation_2.png
+size:1925,1085
+filter:Linear,Linear
+scale:0.5
+Wood
+bounds:2,2,1921,1081
